@@ -7,7 +7,7 @@
 
 import Foundation
 
-func everOrOdd (_ numberOne: Int) -> Bool {
+func everOrOdd (_ numberOne: Int2) -> Bool {
     return numberOne % 2 == 0 ? true : false
 }
 
