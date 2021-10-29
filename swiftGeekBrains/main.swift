@@ -7,8 +7,6 @@
 
 import Foundation
 
-//Функция четное или нет
-
 func everOrOdd (_ numberOne: Int) -> Bool {
     return numberOne % 2 == 0 ? true : false
 }
@@ -21,8 +19,6 @@ if everOrOdd(numberOne) {
     print ("Число нечетное")
 }
 
-//Функция деления на 3 без остатка
-
 func dividedWithoutRemainder (_ numberOne: Int) -> Bool {
     return numberOne % 3 == 0 ? true : false
 }
@@ -33,7 +29,6 @@ if dividedWithoutRemainder(numberOne) {
     print ("3 не делится без остатка")
 }
 
-// Возрастающий массив из 100 чисел
 
 var numberMas:[Int] = []
 
@@ -43,12 +38,9 @@ for index in 1...100 {
 
 print ("Массив из 100 чисел\(numberMas)")
 
-// Удаляем из массива все четные числа и все числа, которые не делятся на 3
 
 let filterNumberMas = numberMas.filter({!everOrOdd($0) && !dividedWithoutRemainder($0)})
 print ("Массив с четными числами и теми, которые не делятся на 3 \(filterNumberMas)")
-
-// Написать функцию, которая добавляет в массив новое число Фибоначчи, и добавить при помощи нее 50 элементов
 
 let quantityNumberFibonacci = 10
 
